@@ -93,12 +93,12 @@ h1{
     position: fixed;
     width: 65%;
     height: 550px;
-    margin-left: 460px;
+    margin-left: 520px;
     margin-top: -450px;
 }
 .car_loan{
-    margin-top: -400px;
-    margin-left: 600px;
+    margin-top: -25rem;
+    margin-left: 700px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -111,9 +111,9 @@ h1{
     box-shadow: 1px 1px 20px grey;
 }
 .home_loan{
-    margin-top: -300px;
-    margin-left: 1100px;
     position: absolute;
+    margin-left: 75rem;
+    bottom: 25rem;
     display: flex;
     align-items: center;
     width: 9rem;
@@ -145,10 +145,33 @@ color: black;
 cursor: pointer;
 }
 .btn3:hover{
-    background-color: bisque;
+    background-color: orchid;
+    color: antiquewhite;
     cursor: pointer;
 }
 .contact ul li:hover{
     font-size: 25px;
     cursor: pointer;
 }
+/* responsive design */
+@media screen and (max-width: 480px) {
+    nav{
+      font-size: 4px;
+      color: red;
+    }
+    .btn1{
+        justify-content: flex-end;
+        background-color: blue;
+    }
+    body{
+        background-size: cover;
+    }
+    .main_hero_right{
+        position: absolute;
+        right: 63rem;
+        top: 75rem;
+    }
+    .hero_image img{
+        width: 42rem;
+    }
+  }
